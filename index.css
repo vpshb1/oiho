@@ -1,0 +1,103 @@
+body {
+  background-image: url("indo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+}
+
+.ce .column tbody {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(50, 0, 150);
+}
+
+.ces {
+  margin-inline: 10px;
+  border-radius: 10px;
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  max-width: 80%;
+}
+
+#anim .column td {
+  animation: jumping-bars 3s linear infinite;
+}
+
+#anim .column tr:nth-of-type(even) td {
+  animation-delay: 300ms;
+}
+
+@keyframes jumping-bars {
+  0% {
+    transform: translateY(0px);
+  }
+  2% {
+    transform: translateY(-10px);
+  }
+  4% {
+    transform: translateY(0px);
+  }
+}
+
+h3 {
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+}
+
+.col-40 {
+  width: 48%;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff0aa;
+}
+
+.table-container {
+  overflow: auto;
+  max-height: 68vh; /* Atur tinggi maksimum tabel */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+  /* border-radius: 10px; */
+}
+
+.sawer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes blink {
+  0% {opacity: 1.0;}
+  50% {opacity: 0.0;}
+  100% {opacity: 1.0;}
+}  
+
+.blinking {
+  animation: blink 1s step-end infinite;
+  color: white;
+}
