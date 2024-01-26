@@ -27,13 +27,13 @@ function comment(data) {
     const nama = isi.author.name;
     const photo = isi.author.images[1].url;
 
-    // Check for anis mentions
-    if (message.includes("anis") || message.includes("muhaimin") || message.includes("amin") || message.includes("imin") || message.includes("1") || message.includes("01")) {
+    // Check for ganjar mentions
+    if (message.includes("ganjar") || message.includes("mahfud") || message.includes("3") || message.includes("03")) {
       if (!voter.includes(nama)) {
-        anis++;
+        ganjar++;
         voter.push(nama);
       }
-      bgColor = 'linear-gradient(45deg, #aaffaa, #fffaaa)';
+      bgColor = 'linear-gradient(45deg, #fffaaa, #ffaaaa)';
     }
 
     // Check for prabowo mentions
@@ -45,13 +45,13 @@ function comment(data) {
       bgColor = 'linear-gradient(45deg, #aaffff, #fffaaa)';
     }
 
-    // Check for ganjar mentions
-    if (message.includes("ganjar") || message.includes("mahfud") || message.includes("3") || message.includes("03")) {
+    // Check for anis mentions
+    if (message.includes("anis") || message.includes("muhaimin") || message.includes("amin") || message.includes("imin") || message.includes("1") || message.includes("01")) {
       if (!voter.includes(nama)) {
-        ganjar++;
+        anis++;
         voter.push(nama);
       }
-      bgColor = 'linear-gradient(45deg, #ffaaaa, #fffaaa)';
+      bgColor = 'linear-gradient(45deg, #aaffaa, #fffaaa)';
     }
 
     body += `
@@ -108,6 +108,6 @@ function scrollToBottom() {
   tableContainer.scrollTop = tableContainer.scrollHeight;
 }
 
-setInterval(() => {
+// setInterval(() => {
   data();
-}, 5000);
+// }, 5000);
