@@ -108,6 +108,6 @@ function scrollToBottom() {
   tableContainer.scrollTop = tableContainer.scrollHeight;
 }
 
-// setInterval(() => {
+setInterval(() => {
   data();
-// }, 5000);
+}, 5000);
